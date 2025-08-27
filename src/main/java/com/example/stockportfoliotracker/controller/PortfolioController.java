@@ -12,7 +12,7 @@ public class PortfolioController{
     @PostMapping("/users")
     public User addUser(@RequestBody User user){ // maps JSON to a User object, and automatically populates User name and email constructors. automatically calls setters
         return PortfolioService.addUser(user); // add to database
-    } 
+    } // request -> controller -> optional class -> service -> optional repository
     
     // POST /users
     // POST /portfolio
